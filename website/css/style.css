@@ -1,0 +1,57 @@
+#banner{
+    margin: -211px -25px 10px 166px;
+}
+#logo{
+    margin: 10px 1185px 4px 9px;
+    border: 2px solid blue;
+    border-radius: 59%;
+    padding: 25px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #efaf4e;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #2396e6;
+  }
+  .menu{
+    margin: 62px 10px 10px 10px;
+  }
+  .leftmenu{
+    margin: 10px 1174px 10px 10px;
+  }
+  .leftmenu ul li a{
+    color: blue;
+  }
+  .rightmenu{x6:51 PM 7/22/2022
+    float: right;
+    margin: -241px 42px 10px 10px;
+    padding: 10px;
+  }
+  #main{
+    margin: -238px 188px 10px 182px;
+    text-align: justify;
+  }
+  .footer{
+    margin: 192px 648px 10px 426px;
+  }

@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "name": "Pizza Hut",
+      "email": "pizzahut@test.com",
+      "address": "Secundrabad",
+      "rating": "5.9",
+      "id": 1
+    },
+    {
+      "name": "McDonald",
+      "email": "mcdonal@test.com",
+      "address": "Secundrabad",
+      "rating": "4.0",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Santosh Daba",
+      "address": "Hyderabad",
+      "rating": "4.5",
+      "email": "santoshdaba@test.com"
+    },
+    {
+      "id": 4,
+      "name": "Rayalaseema Ruchulu",
+      "address": "Madhapur",
+      "rating": "4.5",
+      "email": "rayaseemaruchulu@test.com"
+    }
+  ]
+}
