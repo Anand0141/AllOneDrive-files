@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border=2>
+		<thead>
+			<tr>
+				<th>Employee Id</th>
+				<th>FirstName</th>
+				<th>LastName</th>
+				<th>Designation</th>
+				<th>bloodGroup</th>
+				<th>salary</th>
+				<th>address</th>
+				<th>mobile</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="e: ${viewAll}">
+				<td th:text="${e.empId}"></td>
+				<td th:text="${e.empFirstName}"></td>
+				<td th:text="${e.empLastName}"></td>
+				<td th:text="${e.designation}"></td>
+				<td th:text="${e.bloodGroup}"></td>
+				<td th:text="${e.salary}"></td>
+				<td th:text="${e.address}"></td>
+				<td th:text="${e.mobile}"></td>
+				<td><a th:href="@{edit/{empId}(empId=${e.empId})}">Edit</a></td>
+				<td><a th:href="@{delete/{empId}(empId=${e.empId})}">Delete</a></td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<h3><a th:href="@{./insert}">Add Another Row</a></h3>
+</body>
+</html>

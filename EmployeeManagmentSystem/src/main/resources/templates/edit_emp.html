@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="#" th:action="@{/update}" th:object="${edit}"
+		method="post">
+		<input type="hidden" th:field="*{empId}" /> <input type="text"
+			th:field="*{empFirstName}" /> <input type="text"
+			th:field="*{empLastName}" /> <input type="text"
+			th:field="*{designation}" /> <input type="text"
+			th:field="*{bloodGroup}" /> <input type="text" th:field="*{salary}" />
+		<input type="text" th:field="*{address}" /> <input type="text"
+			th:field="*{mobile}" /> <input type="submit" value="Update Product">
+	</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org"> 
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Management System</title>
+</head>
+<body>
+
+<!-- <p th: text="${message}"> -->
+
+<p th:text="${msg}"></p>
+<br>
+<form action="#" th:action="@{./insert}" th:object="${employee}"
+		method="POST">
+		Enter First Name : <input type="text" th:field="*{empFirstName}"><br>
+		<br> Enter Last Name : <input type="text"
+			th:field="*{empLastName}"><br>
+		<br> Enter Designation : <input type="text"
+			th:field="*{designation}"><br>
+		<br> Enter BloodGroup : <input type="text"
+			th:field="*{bloodGroup}"><br>
+		<br> Enter Salary: <input type="text" th:field="*{salary}"><br>
+		<br> Enter Address : <input type="text" th:field="*{address}"><br>
+		<br> Enter Mobile : <input type="text" th:field="*{mobile}"><br>
+		<br> <input type="submit" value="Insert">
+	</form>
+
+<a th:href="@{./view}">ViewAllRecords</a>
+
+</body>
+</html>
